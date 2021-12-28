@@ -1,21 +1,20 @@
 * {
   margin: 0;
-  font-family: Klavika, Lucida Grande, Tahoma, arial, sans-serif;
+  font-family: Lucida Grande, Helvetica, Tahoma, arial, sans-serif;
 }
 
 body {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   background-color: #f0f2f5;
 }
 
 h1 {
   color: #1778F2;
-  font-family: Klavika, Lucida Grande, Tahoma, arial, sans-serif;
-  margin: 5px 0;
+  font-family: klavika, Lucida Grande, Tahoma, arial, sans-serif;
+  margin-bottom: 7px;
   padding: 5px 0;
-  font-size: 35px;
+  font-size: 36px;
   font-weight: bold;
   letter-spacing: -1px;
 }
@@ -30,23 +29,40 @@ a:hover {
   text-decoration: underline;
 }
 
+h2 {
+  font-size: 24px;
+  font-family: helvetica, Lucida Granda, Tahoma, arial, sans-serif;
+  font-weight: normal;
+  color: #1C1E21;
+  margin-bottom: 3px;
+}
+
+h5 {
+  color: #606770;
+  font-size: 15px;
+  font-weight: normal;
+  font-family: helvetica, arial, sans-serif;
+  margin-bottom: 8px;
+}
+
 .left {
   display: flex;
   flex-direction: column;
-  padding: 100px;
+  margin: 10vw 5vw;
 }
 
 .right {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  padding: 100px;
+  margin: 10vw 5vw;
 }
 
 .profilecontainer {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-top: 5px;
 }
 
 .profilepic {
@@ -75,7 +91,11 @@ a:hover {
 }
 
 .profile > h4 {
-  padding-top: 15px;
+  padding-top: 13px;
+  font-size: 18px;
+  font-weight: normal;
+  color: #4B4F56;
+  font-family: helvetica, arial, sans-serif;
 }
 
 .newacctccontainer {
@@ -104,8 +124,10 @@ a:hover {
 }
 
 .newacctccontainer > h4 {
-  padding-top: 15px;
+  padding-top: 13px;
   color: #1778F2;
+  font-size: 18px;
+  font-weight: normal;
 }
 
 .newacctccontainer:hover {
@@ -119,6 +141,7 @@ a:hover {
   background-color: #FFFFFF;
   border-radius: 10px;
   box-shadow: 0 0 10px #bfbfbf;
+  align-self: center;
 }
 
 .userbox {
@@ -149,36 +172,58 @@ input {
 }
 
 .loginbtn {
-  width: 300px;
-  height: 50px;
+  width: 350px;
+  height: 45px;
   background-color: #1877F2;
   border: none;
   border-radius: 10px;
   color: #FFFFFF;
   margin: 15px;
   align-self: center;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .createbtn {
-  width: 200px;
-  height: 50px;
+  width: 230px;
+  height: 45px;
   background-color: #42B72A;
   color: #FFFFFF;
   border: none;
   border-radius: 10px;
-  margin: 15px;
-  padding: 20px 20px;
+  margin: 10px 0 20px 0;
   align-self: center;
+  font-size: 17px;
+  font-weight: bold;
 }
 
 .logincontainer > a {
   align-self: center;
+  font-size: 14px;
+  color: #1778F2;
+  margin: 5px;
 }
 
 hr {
   width: 80%;
   height: 2px;
-  color: black;
+  background-color: #EBEBEB;
   align-self: center;
   border: none;
+  margin: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.pagemessage {
+  align-self: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+footer {
+  display: flex;
+  background-color: black;
 }
