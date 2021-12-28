@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  font-family: Klavika, Lucida Grande, Tahoma, arial, sans-serif;
 }
 
 body {
@@ -11,15 +12,35 @@ body {
 
 h1 {
   color: #1778F2;
-  font-family: Lucida Grande, Tahoma, arial, sans-serif;
+  font-family: Klavika, Lucida Grande, Tahoma, arial, sans-serif;
   margin: 5px 0;
   padding: 5px 0;
+  font-size: 35px;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 14px;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .left {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  padding: 100px;
+}
+
+.right {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 100px;
 }
 
 .profilecontainer {
@@ -42,30 +63,122 @@ h1 {
   margin: 0;
   padding: 0;
   text-align: center;
-  background-color: #fffff;
+  background-color: #ffffff;
   border-radius: 10px;
-  box-shadow: 5px 5px 10px 0 gray;
+  box-shadow: 0 0 0 1px #dddfe2;
+  margin: 10px 7px 0 0;
 }
 
 .profile:hover {
   cursor: pointer;
+  box-shadow: 0 0 15px 0 #b5b5b5;
 }
+
 .profile > h4 {
   padding-top: 15px;
+}
+
+.newacctccontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 160px;
+  height: 206px;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 1px #dddfe2;
+  border-radius: 10px;
+  margin: 10px 0 0 7px;
 }
 
 .add_account {
   width: 160px;
   height: 160px;
-  background-color: gray;
+  background-color: #f5f6f7;
+  border-radius: 10px 10px 0 0;
 }
+
 .fa-plus-circle {
   color: #1778F2;
   font-size: 3em;
-  padding: 55px;;
+  padding: 55px;
 }
 
-.login-container {
+.newacctccontainer > h4 {
+  padding-top: 15px;
+  color: #1778F2;
+}
+
+.newacctccontainer:hover {
+  cursor: pointer;
+  box-shadow: 0 0 15px 0 #b5b5b5;
+}
+
+.logincontainer {
   display: flex;
   flex-direction: column;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #bfbfbf;
+}
+
+.userbox {
+  border: 2px solid #ebebeb;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 5px;
+}
+
+.passwordbox {
+  border: 2px solid #ebebeb;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 5px;
+}
+
+input {
+  border: none;
+  outline: none;
+  margin: 0;
+  width: 340px;
+  height: 40px;
+  font-size: 16px;
+}
+
+::placeholder {
+  opacity: 50%
+}
+
+.loginbtn {
+  width: 300px;
+  height: 50px;
+  background-color: #1877F2;
+  border: none;
+  border-radius: 10px;
+  color: #FFFFFF;
+  margin: 15px;
+  align-self: center;
+}
+
+.createbtn {
+  width: 200px;
+  height: 50px;
+  background-color: #42B72A;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 10px;
+  margin: 15px;
+  padding: 20px 20px;
+  align-self: center;
+}
+
+.logincontainer > a {
+  align-self: center;
+}
+
+hr {
+  width: 80%;
+  height: 2px;
+  color: black;
+  align-self: center;
+  border: none;
 }
